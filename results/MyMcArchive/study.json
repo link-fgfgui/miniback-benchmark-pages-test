@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "name": "MyMcArchive",
+  "created": "2026-10-22T17:57:51+0800",
+  "dataset": {
+    "source": "$BENCH_BASE/datasets/MyMcArchive/manifest.tsv",
+    "snapshots": [
+      {
+        "label": "00001-20240405-033901-5cae626",
+        "source_bytes": 645735282,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      },
+      {
+        "label": "00002-20240704-174941-7fcd4cb",
+        "source_bytes": 646025415,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      },
+      {
+        "label": "00003-20240717-155742-a39a83f",
+        "source_bytes": 646080331,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      },
+      {
+        "label": "00004-20240723-160107-d4bc10a",
+        "source_bytes": 646126979,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      },
+      {
+        "label": "00005-20240724-083428-a507293",
+        "source_bytes": 646155512,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      },
+      {
+        "label": "00006-20240728-141826-9469426",
+        "source_bytes": 648595446,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      },
+      {
+        "label": "00007-20240729-172014-a2a392f",
+        "source_bytes": 656634670,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/MyMcArchive"
+      }
+    ],
+    "total_source_bytes": 4535353635,
+    "kind": "git",
+    "repo": "https://github.com/NvFls/MyMcArchive",
+    "repo_bytes": 970174464,
+    "repo_bytes_basis": "git count-objects size + size-pack",
+    "git_dir": "$BENCH_BASE/repos/MyMcArchive.git",
+    "branch": "master",
+    "roots": [
+      "."
+    ],
+    "commits_total": 9,
+    "commits_effective": 7,
+    "commits_skipped": 2,
+    "first_commit": "5cae6261d46183be4b45aa9fbde67e0ff177b53c",
+    "last_commit": "a2a392faf44038075f778cee3dff4a00268b1d9c",
+    "first_date": "2024-04-05T03:39:01Z",
+    "last_date": "2024-07-29T17:20:14Z",
+    "source_basis": "working-tree apparent bytes at each commit",
+    "manifest": "$BENCH_BASE/datasets/MyMcArchive/manifest.tsv"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "8g",
+      "elapsed_ms": 148637
+    },
+    {
+      "id": "zstd-l9",
+      "level": 9,
+      "long": false,
+      "dir": "zstd-l9",
+      "heap": "8g",
+      "elapsed_ms": 219182
+    }
+  ],
+  "argv": [
+    "bench.py",
+    "run",
+    "--manifest",
+    "$BENCH_BASE/datasets/MyMcArchive/manifest.tsv",
+    "--raw-manifest",
+    "--meta",
+    "$BENCH_BASE/datasets/MyMcArchive/dataset.json",
+    "--name",
+    "MyMcArchive",
+    "--levels",
+    "3,9",
+    "--heap",
+    "8g",
+    "--force"
+  ]
+}

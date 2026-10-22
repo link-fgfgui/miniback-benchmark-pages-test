@@ -1,0 +1,10 @@
+work/
+out/
+saves/*
+!saves/README.md
+archive/
+.playwright-mcp/
+__pycache__/
+*.pyc
+index-preview.png
+final-overview.png

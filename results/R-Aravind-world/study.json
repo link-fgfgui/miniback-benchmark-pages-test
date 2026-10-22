@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "name": "R-Aravind-world",
+  "created": "2026-10-22T18:12:44+0800",
+  "dataset": {
+    "source": "$BENCH_BASE/datasets/R-Aravind-world/manifest.tsv",
+    "snapshots": [
+      {
+        "label": "00001-20220128-111624-07ad997",
+        "source_bytes": 103495817,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00002-20220129-113003-4f2144f",
+        "source_bytes": 366553311,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00003-20220131-170615-952ce44",
+        "source_bytes": 454938430,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00004-20220207-083450-6f6dcf9",
+        "source_bytes": 661104265,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00005-20220209-141644-8064c9d",
+        "source_bytes": 678779505,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00006-20220215-153620-c574d78",
+        "source_bytes": 815117778,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00007-20220216-073450-e04774f",
+        "source_bytes": 868897167,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00008-20220218-160131-2953ffd",
+        "source_bytes": 892750409,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      },
+      {
+        "label": "00009-20231110-095418-94cffb9",
+        "source_bytes": 1020496055,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/R-Aravind-world"
+      }
+    ],
+    "total_source_bytes": 5862132737,
+    "kind": "git",
+    "repo": "https://github.com/R-Aravind/world",
+    "repo_bytes": 1527216128,
+    "repo_bytes_basis": "git count-objects size + size-pack",
+    "git_dir": "$BENCH_BASE/repos/R-Aravind-world.git",
+    "branch": "master",
+    "roots": [
+      "."
+    ],
+    "commits_total": 10,
+    "commits_effective": 9,
+    "commits_skipped": 1,
+    "first_commit": "07ad9973dfe25e53f22b3591070fedd888c3c469",
+    "last_commit": "94cffb9f242ffd52e03e9833ea3f6e8de2c5ad37",
+    "first_date": "2022-01-28T11:16:24Z",
+    "last_date": "2023-11-10T09:54:18Z",
+    "source_basis": "working-tree apparent bytes at each commit",
+    "manifest": "$BENCH_BASE/datasets/R-Aravind-world/manifest.tsv"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "8g",
+      "elapsed_ms": 305409
+    }
+  ],
+  "argv": [
+    "bench.py",
+    "run",
+    "--manifest",
+    "$BENCH_BASE/datasets/R-Aravind-world/manifest.tsv",
+    "--raw-manifest",
+    "--meta",
+    "$BENCH_BASE/datasets/R-Aravind-world/dataset.json",
+    "--name",
+    "R-Aravind-world",
+    "--levels",
+    "3",
+    "--heap",
+    "8g",
+    "--force"
+  ]
+}

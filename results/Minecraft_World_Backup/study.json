@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "name": "Minecraft_World_Backup",
+  "created": "2026-10-22T18:13:18+0800",
+  "dataset": {
+    "source": "$BENCH_BASE/datasets/Minecraft_World_Backup/manifest.tsv",
+    "snapshots": [
+      {
+        "label": "00001-20260611-175401-4ebc2b7",
+        "source_bytes": 96708664,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00002-20260619-075159-0c5a6af",
+        "source_bytes": 96783281,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00003-20260620-202014-9fd067d",
+        "source_bytes": 100687228,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00004-20260621-121913-e8fd2bc",
+        "source_bytes": 103168808,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00005-20260621-193221-ff918ca",
+        "source_bytes": 103254766,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00006-20260622-085758-db7817a",
+        "source_bytes": 105669313,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00007-20260622-191731-5fc0f06",
+        "source_bytes": 143283847,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00008-20260623-094429-40c51a1",
+        "source_bytes": 146314078,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00009-20260623-133440-f7dcca0",
+        "source_bytes": 222764041,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00010-20260624-125249-4dacdb0",
+        "source_bytes": 231956519,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00011-20260625-095731-6c9c1e1",
+        "source_bytes": 232001322,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00012-20260626-120134-ee7bf27",
+        "source_bytes": 232356969,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00013-20260627-122307-26dc6ee",
+        "source_bytes": 243601600,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00014-20260627-182909-2912e1b",
+        "source_bytes": 243612024,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00015-20260628-092127-b86f1af",
+        "source_bytes": 243620573,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00016-20260628-191146-71184e2",
+        "source_bytes": 252799955,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00017-20260629-192115-e226393",
+        "source_bytes": 257716773,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00018-20260702-091011-61dceec",
+        "source_bytes": 257900668,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00019-20260703-113533-7f7dd43",
+        "source_bytes": 257936622,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00020-20260711-173537-223b1de",
+        "source_bytes": 263109298,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      },
+      {
+        "label": "00021-20260919-140323-980c611",
+        "source_bytes": 263146171,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/Minecraft_World_Backup/world"
+      }
+    ],
+    "total_source_bytes": 4098392520,
+    "kind": "git",
+    "repo": "https://github.com/Shubhamjoshidev-28/Minecraft_World_Backup",
+    "repo_bytes": 1113807872,
+    "repo_bytes_basis": "git count-objects size + size-pack",
+    "git_dir": "$BENCH_BASE/repos/Minecraft_World_Backup.git",
+    "branch": "master",
+    "roots": [
+      "world"
+    ],
+    "commits_total": 27,
+    "commits_effective": 21,
+    "commits_skipped": 6,
+    "first_commit": "4ebc2b7119363c9c75944b11b6eda67bbcc10385",
+    "last_commit": "980c6117a063e0fcbbd1fc92e81704a4202ff84e",
+    "first_date": "2026-06-11T17:54:01Z",
+    "last_date": "2026-09-19T14:03:23Z",
+    "source_basis": "working-tree apparent bytes at each commit",
+    "manifest": "$BENCH_BASE/datasets/Minecraft_World_Backup/manifest.tsv"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "8g",
+      "elapsed_ms": 180396
+    },
+    {
+      "id": "zstd-l9",
+      "level": 9,
+      "long": false,
+      "dir": "zstd-l9",
+      "heap": "8g",
+      "elapsed_ms": 217804
+    }
+  ],
+  "argv": [
+    "bench.py",
+    "run",
+    "--manifest",
+    "$BENCH_BASE/datasets/Minecraft_World_Backup/manifest.tsv",
+    "--raw-manifest",
+    "--meta",
+    "$BENCH_BASE/datasets/Minecraft_World_Backup/dataset.json",
+    "--name",
+    "Minecraft_World_Backup",
+    "--levels",
+    "3,9",
+    "--heap",
+    "8g",
+    "--force"
+  ]
+}

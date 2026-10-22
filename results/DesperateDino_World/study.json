@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "name": "DesperateDino_World",
+  "created": "2026-10-22T18:41:29+0800",
+  "dataset": {
+    "source": "$BENCH_BASE/datasets/DesperateDino_World/manifest.tsv",
+    "snapshots": [
+      {
+        "label": "00001-20260101-202937-7cb73eb",
+        "source_bytes": 1252375754,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00002-20260104-062213-83f5e9d",
+        "source_bytes": 2505231748,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00003-20260104-064235-a4d1940",
+        "source_bytes": 1252856327,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00004-20260109-030734-9b876ed",
+        "source_bytes": 1347350319,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00005-20260111-022541-87982da",
+        "source_bytes": 1358942824,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00006-20260111-050821-ec2ba7a",
+        "source_bytes": 1478332851,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00007-20260112-055741-371243a",
+        "source_bytes": 1478972485,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00008-20260112-230047-9aef6d3",
+        "source_bytes": 1479036766,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00009-20260116-012928-bc1718a",
+        "source_bytes": 1561117263,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00010-20260116-063931-23b9d7d",
+        "source_bytes": 1561117883,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00011-20260117-100326-6e12c8b",
+        "source_bytes": 1563046417,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00012-20260118-100401-d71761c",
+        "source_bytes": 1633791142,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00013-20260119-100336-32c474e",
+        "source_bytes": 1659373068,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00014-20260120-100337-b9eca2d",
+        "source_bytes": 1661772062,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00015-20260121-100359-22798a7",
+        "source_bytes": 1713352292,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00016-20260122-100342-caaab16",
+        "source_bytes": 1713404179,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00017-20260123-100401-5912253",
+        "source_bytes": 1726085168,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00018-20260124-100400-95aa0e6",
+        "source_bytes": 1729987377,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00019-20260125-100349-aae6e85",
+        "source_bytes": 1729988475,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00020-20260130-100339-ab712c5",
+        "source_bytes": 1729987535,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00021-20260131-100340-e083d7d",
+        "source_bytes": 1730089807,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00022-20260201-100344-46de22e",
+        "source_bytes": 1730483137,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00023-20260206-054356-6a0ab5b",
+        "source_bytes": 1730930663,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00024-20260207-100359-351fd06",
+        "source_bytes": 1732026731,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00025-20260208-100403-e59bdc6",
+        "source_bytes": 1732170277,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00026-20260209-100324-b3b2592",
+        "source_bytes": 1732346036,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00027-20260217-100338-f450395",
+        "source_bytes": 1732346350,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00028-20260328-090334-4833e2e",
+        "source_bytes": 1732346334,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00029-20260403-090330-0f98615",
+        "source_bytes": 1732346340,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00030-20260418-090331-5fd2dfb",
+        "source_bytes": 1732346252,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00031-20260511-090313-6252c95",
+        "source_bytes": 1732345827,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00032-20260725-090328-d4c0d4b",
+        "source_bytes": 1732345840,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00033-20260726-090408-4af02ff",
+        "source_bytes": 1732350617,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      },
+      {
+        "label": "00034-20260728-090335-e0153d8",
+        "source_bytes": 1732351064,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/DesperateDino_World/world_backup"
+      }
+    ],
+    "total_source_bytes": 56382947210,
+    "kind": "git",
+    "repo": "https://github.com/DesperateDinosaur/DesperateDino_World",
+    "repo_bytes": 2662210560,
+    "repo_bytes_basis": "git count-objects size + size-pack",
+    "git_dir": "$BENCH_BASE/repos/DesperateDino_World.git",
+    "branch": "main",
+    "roots": [
+      "world_backup"
+    ],
+    "commits_total": 41,
+    "commits_effective": 34,
+    "commits_skipped": 7,
+    "first_commit": "7cb73eb8bd8f6f5a5d3a5ae25c7f198e20dd8011",
+    "last_commit": "e0153d85f4f8e4c0c2bbf251a67c9e0ee3c382a0",
+    "first_date": "2026-01-01T20:29:37Z",
+    "last_date": "2026-07-28T09:03:35Z",
+    "source_basis": "working-tree apparent bytes at each commit",
+    "manifest": "$BENCH_BASE/datasets/DesperateDino_World/manifest.tsv"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "14g",
+      "elapsed_ms": 753570
+    }
+  ],
+  "argv": [
+    "bench.py",
+    "run",
+    "--manifest",
+    "$BENCH_BASE/datasets/DesperateDino_World/manifest.tsv",
+    "--raw-manifest",
+    "--meta",
+    "$BENCH_BASE/datasets/DesperateDino_World/dataset.json",
+    "--name",
+    "DesperateDino_World",
+    "--levels",
+    "3",
+    "--heap",
+    "14g",
+    "--force"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "name": "git-mc-world",
+  "created": "2026-10-22T19:20:58+0800",
+  "dataset": {
+    "source": "$BENCH_BASE/datasets/git-mc-world/manifest.tsv",
+    "snapshots": [
+      {
+        "label": "00001-20240313-182343-faf07dd",
+        "source_bytes": 29713069,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00002-20240313-204147-43a3406",
+        "source_bytes": 62744261,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00003-20240314-032730-ac30560",
+        "source_bytes": 75283552,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00004-20240315-141543-aa3447b",
+        "source_bytes": 77180509,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00005-20240315-154008-6c3a932",
+        "source_bytes": 77386949,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00006-20240316-124205-64ecf04",
+        "source_bytes": 77618495,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00007-20240609-164317-2e3a33d",
+        "source_bytes": 79019410,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      },
+      {
+        "label": "00008-20240609-190941-48afa25",
+        "source_bytes": 84493419,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/git-mc-world"
+      }
+    ],
+    "total_source_bytes": 563439664,
+    "kind": "git",
+    "repo": "https://github.com/wavejumper3/git-mc-world",
+    "repo_bytes": 366296064,
+    "repo_bytes_basis": "git count-objects size + size-pack",
+    "git_dir": "$BENCH_BASE/gitclonerepo/git-mc-world/.git",
+    "branch": "main",
+    "roots": [
+      "."
+    ],
+    "commits_total": 9,
+    "commits_effective": 8,
+    "commits_skipped": 1,
+    "first_commit": "faf07ddc694d414e15a859a582731d4423da0f2a",
+    "last_commit": "48afa25cba6165b48f609acac39c4b2c959fd2aa",
+    "first_date": "2024-03-13T18:23:43Z",
+    "last_date": "2024-06-09T19:09:41Z",
+    "source_basis": "working-tree apparent bytes at each commit",
+    "manifest": "$BENCH_BASE/datasets/git-mc-world/manifest.tsv"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "8g",
+      "elapsed_ms": 89086
+    },
+    {
+      "id": "zstd-l9",
+      "level": 9,
+      "long": false,
+      "dir": "zstd-l9",
+      "heap": "8g",
+      "elapsed_ms": 108910
+    }
+  ],
+  "argv": [
+    "bench.py",
+    "run",
+    "--manifest",
+    "$BENCH_BASE/datasets/git-mc-world/manifest.tsv",
+    "--raw-manifest",
+    "--meta",
+    "$BENCH_BASE/datasets/git-mc-world/dataset.json",
+    "--name",
+    "git-mc-world",
+    "--levels",
+    "3,9",
+    "--heap",
+    "8g",
+    "--force"
+  ]
+}

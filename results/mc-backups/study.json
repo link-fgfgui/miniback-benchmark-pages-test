@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "name": "mc-backups",
+  "created": "2026-10-22T16:29:48+0800",
+  "dataset": {
+    "source": "$PROJECT/datasets/legacy-19.tsv",
+    "snapshots": [
+      {
+        "label": "manual-20260820-224017",
+        "source_bytes": 78435405,
+        "kind": "manifest"
+      },
+      {
+        "label": "manual-20260820-224142",
+        "source_bytes": 78463433,
+        "kind": "manifest"
+      },
+      {
+        "label": "manual-20260820-224217",
+        "source_bytes": 78468834,
+        "kind": "manifest"
+      },
+      {
+        "label": "manual-20260822-214031",
+        "source_bytes": 79240141,
+        "kind": "manifest"
+      },
+      {
+        "label": "manual-20260822-215113",
+        "source_bytes": 79246415,
+        "kind": "manifest"
+      },
+      {
+        "label": "manual-20260822-215211",
+        "source_bytes": 79252524,
+        "kind": "manifest"
+      },
+      {
+        "label": "manual-20261007-165154",
+        "source_bytes": 112861529,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-130006",
+        "source_bytes": 113084335,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-140005",
+        "source_bytes": 113094416,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-150009",
+        "source_bytes": 113092903,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-160005",
+        "source_bytes": 113095135,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-170009",
+        "source_bytes": 113095633,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-180010",
+        "source_bytes": 113099306,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-190008",
+        "source_bytes": 113102523,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-200005",
+        "source_bytes": 113092140,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-210008",
+        "source_bytes": 113103960,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-220010",
+        "source_bytes": 113078993,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261010-230008",
+        "source_bytes": 113079764,
+        "kind": "manifest"
+      },
+      {
+        "label": "mc-backup-20261011-000005",
+        "source_bytes": 113094702,
+        "kind": "manifest"
+      }
+    ],
+    "total_source_bytes": 1943082091,
+    "kind": "archive",
+    "repo": "mc-backups.zip (19 full saves)",
+    "repo_bytes": 1943082091,
+    "commits_total": 19,
+    "commits_effective": 19,
+    "commits_skipped": 0,
+    "source_basis": "compressed tar.gz archives from mc-backups.zip"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "12g",
+      "elapsed_ms": 69792
+    },
+    {
+      "id": "zstd-l3-long",
+      "level": 3,
+      "long": true,
+      "dir": "zstd-l3-long",
+      "heap": "12g",
+      "elapsed_ms": 55786
+    },
+    {
+      "id": "zstd-l9",
+      "level": 9,
+      "long": false,
+      "dir": "zstd-l9",
+      "heap": "12g",
+      "elapsed_ms": 67213
+    },
+    {
+      "id": "zstd-l9-long",
+      "level": 9,
+      "long": true,
+      "dir": "zstd-l9-long",
+      "heap": "12g",
+      "elapsed_ms": 69002
+    }
+  ],
+  "argv": [
+    "./bench.py run --manifest datasets/legacy-19.tsv --name legacy-19",
+    "--levels 3,9 --long off,on --heap 12g"
+  ]
+}

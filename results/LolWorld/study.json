@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "name": "LolWorld",
+  "created": "2026-10-22T19:21:38+0800",
+  "dataset": {
+    "source": "$BENCH_BASE/datasets/LolWorld/manifest.tsv",
+    "snapshots": [
+      {
+        "label": "00001-20230804-140453-a19c878",
+        "source_bytes": 26875228,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/LolWorld"
+      },
+      {
+        "label": "00002-20230812-144017-a415091",
+        "source_bytes": 27105147,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/LolWorld"
+      },
+      {
+        "label": "00003-20230812-151500-921d3b2",
+        "source_bytes": 30024628,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/LolWorld"
+      },
+      {
+        "label": "00004-20230812-154255-b59bb1d",
+        "source_bytes": 31245583,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/LolWorld"
+      },
+      {
+        "label": "00005-20230813-062140-3f9a761",
+        "source_bytes": 34669532,
+        "kind": "engine",
+        "roots": "$BENCH_BASE/work/git/LolWorld"
+      }
+    ],
+    "total_source_bytes": 149920118,
+    "kind": "git",
+    "repo": "https://github.com/moltony/LolWorld",
+    "repo_bytes": 86565888,
+    "repo_bytes_basis": "git count-objects size + size-pack",
+    "git_dir": "$BENCH_BASE/gitclonerepo/LolWorld/.git",
+    "branch": "master",
+    "roots": [
+      "."
+    ],
+    "commits_total": 8,
+    "commits_effective": 5,
+    "commits_skipped": 3,
+    "first_commit": "a19c878f5f352d31dc666daf11771205137e754a",
+    "last_commit": "3f9a7618c83f25229210ca90a9205aec40194f90",
+    "first_date": "2023-08-04T14:04:53Z",
+    "last_date": "2023-08-13T06:21:40Z",
+    "source_basis": "working-tree apparent bytes at each commit",
+    "manifest": "$BENCH_BASE/datasets/LolWorld/manifest.tsv"
+  },
+  "engine": {
+    "project": "$MINIMAL_BACKUP",
+    "source_count": 32,
+    "source_sha256": "ef7566fdc1e2a3d3700e6491e6860f8abc71f8e716432795b1709443508f4085"
+  },
+  "environment": {
+    "os": "Linux 7.2.11-200.fc44.x86_64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cores": 12,
+    "memory_gb": 33.4,
+    "java": "openjdk version \"25.0.4\" 2026-07-21 LTS",
+    "python": "3.14.8"
+  },
+  "runs": [
+    {
+      "id": "zstd-l3",
+      "level": 3,
+      "long": false,
+      "dir": "zstd-l3",
+      "heap": "8g",
+      "elapsed_ms": 16167
+    },
+    {
+      "id": "zstd-l9",
+      "level": 9,
+      "long": false,
+      "dir": "zstd-l9",
+      "heap": "8g",
+      "elapsed_ms": 21448
+    }
+  ],
+  "argv": [
+    "bench.py",
+    "run",
+    "--manifest",
+    "$BENCH_BASE/datasets/LolWorld/manifest.tsv",
+    "--raw-manifest",
+    "--meta",
+    "$BENCH_BASE/datasets/LolWorld/dataset.json",
+    "--name",
+    "LolWorld",
+    "--levels",
+    "3,9",
+    "--heap",
+    "8g",
+    "--force"
+  ]
+}

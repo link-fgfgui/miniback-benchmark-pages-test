@@ -1,0 +1,21 @@
+# Bundled 19-snapshot dataset: 6 manual + 1 manual + 12 hourly full saves.
+# label	world (relative to this file)	source_bytes (compressed full-save archive)
+manual-20260820-224017	../work/worlds/manual-20260820-224017/world	78435405
+manual-20260820-224142	../work/worlds/manual-20260820-224142/world	78463433
+manual-20260820-224217	../work/worlds/manual-20260820-224217/world	78468834
+manual-20260822-214031	../work/worlds/manual-20260822-214031/world	79240141
+manual-20260822-215113	../work/worlds/manual-20260822-215113/world	79246415
+manual-20260822-215211	../work/worlds/manual-20260822-215211/world	79252524
+manual-20261007-165154	../work/worlds/manual-20261007-165154/world	112861529
+mc-backup-20261010-130006	../work/worlds/mc-backup-20261010-130006/world	113084335
+mc-backup-20261010-140005	../work/worlds/mc-backup-20261010-140005/world	113094416
+mc-backup-20261010-150009	../work/worlds/mc-backup-20261010-150009/world	113092903
+mc-backup-20261010-160005	../work/worlds/mc-backup-20261010-160005/world	113095135
+mc-backup-20261010-170009	../work/worlds/mc-backup-20261010-170009/world	113095633
+mc-backup-20261010-180010	../work/worlds/mc-backup-20261010-180010/world	113099306
+mc-backup-20261010-190008	../work/worlds/mc-backup-20261010-190008/world	113102523
+mc-backup-20261010-200005	../work/worlds/mc-backup-20261010-200005/world	113092140
+mc-backup-20261010-210008	../work/worlds/mc-backup-20261010-210008/world	113103960
+mc-backup-20261010-220010	../work/worlds/mc-backup-20261010-220010/world	113078993
+mc-backup-20261010-230008	../work/worlds/mc-backup-20261010-230008/world	113079764
+mc-backup-20261011-000005	../work/worlds/mc-backup-20261011-000005/world	113094702
