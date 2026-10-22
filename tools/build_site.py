@@ -11,8 +11,8 @@ index/overview landing pages.
 from __future__ import annotations
 
 import argparse
-import gzip
 import json
+import lzma
 import shutil
 import subprocess
 import sys
@@ -44,11 +44,12 @@ def sanitize_json(value):
     return value
 
 
-def copy_or_gzip(source: Path, target: Path, threshold: int) -> None:
+def write_changes(source: Path, run_dir: Path, threshold: int) -> None:
     if source.stat().st_size <= threshold:
-        shutil.copy2(source, target)
+        shutil.copy2(source, run_dir / "changes.csv")
         return
-    with source.open("rb") as src, gzip.open(target, "wb", compresslevel=6) as dst:
+    with source.open("rb") as src, lzma.open(run_dir / "changes.csv.xz", "wb",
+                                             preset=6) as dst:
         shutil.copyfileobj(src, dst, length=1 << 20)
 
 
@@ -78,10 +79,7 @@ def build(src: Path, out: Path, threshold: int) -> None:
                     shutil.copy2(source_run / name, run_dir / name)
             changes = source_run / "changes.csv"
             if changes.is_file():
-                if changes.stat().st_size > threshold:
-                    copy_or_gzip(changes, run_dir / "changes.csv.gz", threshold)
-                else:
-                    shutil.copy2(changes, run_dir / "changes.csv")
+                write_changes(changes, run_dir, threshold)
         subprocess.run([sys.executable, str(HERE / "report.py"), str(dest)], check=True)
         for name in ("report.html", "report.md"):
             path = dest / name

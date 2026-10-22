@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import gzip
 import html
+import lzma
 import json
 import math
 import re
@@ -438,10 +439,13 @@ class Run:
         self.families = read_csv(self.dir / "families.csv")
         self.regions_path = self.dir / "regions.csv"
         self.changes_path = self.dir / "changes.csv"
-        self.changes_gz = False
+        self.changes_comp = "plain"
         if not self.changes_path.is_file() and (self.dir / "changes.csv.gz").is_file():
             self.changes_path = self.dir / "changes.csv.gz"
-            self.changes_gz = True
+            self.changes_comp = "gz"
+        elif not self.changes_path.is_file() and (self.dir / "changes.csv.xz").is_file():
+            self.changes_path = self.dir / "changes.csv.xz"
+            self.changes_comp = "xz"
         self.skipped_path = self.dir / "skipped.csv"
         self.labels = [row["version"] for row in self.versions]
 
@@ -513,7 +517,7 @@ class Run:
         if not self.changes_path.is_file():
             return []
         totals: dict[str, dict] = {}
-        opener = gzip.open if self.changes_gz else open
+        opener = {"gz": gzip.open, "xz": lzma.open}.get(self.changes_comp, open)
         with opener(self.changes_path, "rt", encoding="utf-8", newline="") as handle:
             for row in csv.DictReader(handle):
                 if row.get("mode") != "DELTA":
@@ -1075,6 +1079,8 @@ def build(study_dir: Path) -> tuple[str, str]:
                 links.append(f'<a href="{rel}/{name}">{name}</a>')
             elif (run.dir / (name + ".gz")).is_file():
                 links.append(f'<a href="{rel}/{name}.gz">{name}.gz</a>')
+            elif (run.dir / (name + ".xz")).is_file():
+                links.append(f'<a href="{rel}/{name}.xz">{name}.xz</a>')
         raw_links.append(f'<li><b>{esc(run.name)}</b>: ' + " · ".join(links) + "</li>")
     raw_card = (f'<section class="card"><h2>Raw data</h2>'
                 f'<p class="note">Every number in this report comes from these files. They are '
