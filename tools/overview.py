@@ -178,7 +178,7 @@ footer{color:#7a8797;font-size:12px;margin-top:28px;padding-top:16px;border-top:
 """
     doc = ("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">"
            "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
-           "<title>Git world backup benchmark</title>"
+           "<title>World backup benchmark</title>"
            f"<style>{css_text}</style></head><body><div class=\"wrap\">{body}</div></body></html>")
     (results / "overview.html").write_text(doc, encoding="utf-8")
 
